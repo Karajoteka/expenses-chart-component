@@ -1,0 +1,137 @@
+$font-stack:'DM Sans', sans-serif;
+$soft-red: hsl(10, 79%, 65%);
+$cyan: hsl(186, 34%, 60%);
+$dark-brown: hsl(25, 47%, 15%);
+$medium-brown: hsl(28, 10%, 53%);
+$cream: hsl(27, 66%, 92%);
+$very-pale-orange: hsl(33, 100%, 98%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-stack;
+  background-color: $cream;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 350px;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: $soft-red;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .balance-container {
+    color: $very-pale-orange;
+
+    .my-balance {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .total-amount {
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+  }
+
+  .logo-container img {
+    width: 65px;
+    margin-top: 5px;
+  }
+}
+
+.main-container {
+  width: 350px;
+  margin-top: 16px;
+  padding: 20px;
+  background-color: $very-pale-orange;
+  border-radius: 10px;
+
+  h2 {
+    font-size: 2.5rem;
+    color: $dark-brown;
+    margin-bottom: 20px;
+  }
+
+  .graphics-container {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    border-bottom: 1px solid $medium-brown;
+
+    .monday-container, .tuesday-container, .wednesday-container, .thursday-container, .friday-container, .saturday-container, .sunday-container  {
+      display: grid;
+      grid-template-rows: 160px 40px;
+
+      div {
+        width: 35px;
+        background-color: $soft-red;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: $medium-brown;
+        text-align: center;
+      }
+    }
+  }
+
+
+
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    .monthly-total-container {
+
+      .total {
+        font-size: 1.4rem;
+        color: $medium-brown;
+      }
+
+      .monthly-amount {
+        margin-top: 5px;
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: $dark-brown;
+      }
+    }
+
+    .percentage-container {
+      text-align: end;
+      margin-top: 15px;
+
+      .percentage {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: $dark-brown;
+        margin-bottom: 5px;
+      }
+
+      .last-month {
+        font-size: 1.4rem;
+        color: $medium-brown;
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: hsl(27, 66%, 92%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 350px;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header .balance-container {
+  color: hsl(33, 100%, 98%);
+}
+.header .balance-container .my-balance {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.header .balance-container .total-amount {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.header .logo-container img {
+  width: 65px;
+  margin-top: 5px;
+}
+
+.main-container {
+  width: 350px;
+  margin-top: 16px;
+  padding: 20px;
+  background-color: hsl(33, 100%, 98%);
+  border-radius: 10px;
+}
+.main-container h2 {
+  font-size: 2.5rem;
+  color: hsl(25, 47%, 15%);
+  margin-bottom: 20px;
+}
+.main-container .graphics-container {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  border-bottom: 1px solid hsl(28, 10%, 53%);
+}
+.main-container .graphics-container .monday-container, .main-container .graphics-container .tuesday-container, .main-container .graphics-container .wednesday-container, .main-container .graphics-container .thursday-container, .main-container .graphics-container .friday-container, .main-container .graphics-container .saturday-container, .main-container .graphics-container .sunday-container {
+  display: grid;
+  grid-template-rows: 160px 40px;
+}
+.main-container .graphics-container .monday-container div, .main-container .graphics-container .tuesday-container div, .main-container .graphics-container .wednesday-container div, .main-container .graphics-container .thursday-container div, .main-container .graphics-container .friday-container div, .main-container .graphics-container .saturday-container div, .main-container .graphics-container .sunday-container div {
+  width: 35px;
+  background-color: hsl(10, 79%, 65%);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main-container .graphics-container .monday-container p, .main-container .graphics-container .tuesday-container p, .main-container .graphics-container .wednesday-container p, .main-container .graphics-container .thursday-container p, .main-container .graphics-container .friday-container p, .main-container .graphics-container .saturday-container p, .main-container .graphics-container .sunday-container p {
+  font-size: 1.2rem;
+  color: hsl(28, 10%, 53%);
+  text-align: center;
+}
+.main-container .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.main-container .footer .monthly-total-container .total {
+  font-size: 1.4rem;
+  color: hsl(28, 10%, 53%);
+}
+.main-container .footer .monthly-total-container .monthly-amount {
+  margin-top: 5px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+}
+.main-container .footer .percentage-container {
+  text-align: end;
+  margin-top: 15px;
+}
+.main-container .footer .percentage-container .percentage {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+  margin-bottom: 5px;
+}
+.main-container .footer .percentage-container .last-month {
+  font-size: 1.4rem;
+  color: hsl(28, 10%, 53%);
+}/*# sourceMappingURL=styles.css.map */
