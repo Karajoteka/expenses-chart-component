@@ -71,6 +71,9 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+.main-container .graphics-container .monday-container div:hover, .main-container .graphics-container .tuesday-container div:hover, .main-container .graphics-container .wednesday-container div:hover, .main-container .graphics-container .thursday-container div:hover, .main-container .graphics-container .friday-container div:hover, .main-container .graphics-container .saturday-container div:hover, .main-container .graphics-container .sunday-container div:hover {
+  background-color: hsl(10, 72%, 72%);
+}
 .main-container .graphics-container .monday-container p, .main-container .graphics-container .tuesday-container p, .main-container .graphics-container .wednesday-container p, .main-container .graphics-container .thursday-container p, .main-container .graphics-container .friday-container p, .main-container .graphics-container .saturday-container p, .main-container .graphics-container .sunday-container p {
   font-size: 1.2rem;
   color: hsl(28, 10%, 53%);
@@ -105,4 +108,17 @@ body {
 .main-container .footer .percentage-container .last-month {
   font-size: 1.4rem;
   color: hsl(28, 10%, 53%);
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    margin-top: 100px;
+    width: 400px;
+  }
+  .main-container {
+    width: 400px;
+  }
+  .main-container .graphics-container .monday-container div, .main-container .graphics-container .tuesday-container div, .main-container .graphics-container .wednesday-container div, .main-container .graphics-container .thursday-container div, .main-container .graphics-container .friday-container div, .main-container .graphics-container .saturday-container div, .main-container .graphics-container .sunday-container div {
+    width: 40px;
+  }
 }/*# sourceMappingURL=styles.css.map */

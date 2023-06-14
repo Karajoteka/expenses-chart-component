@@ -1,5 +1,6 @@
 $font-stack:'DM Sans', sans-serif;
 $soft-red: hsl(10, 79%, 65%);
+$soft-red-hover: hsl(10, 72%, 72%);
 $cyan: hsl(186, 34%, 60%);
 $dark-brown: hsl(25, 47%, 15%);
 $medium-brown: hsl(28, 10%, 53%);
@@ -83,6 +84,10 @@ body {
         margin-bottom: 10px;
         border-radius: 5px;
         cursor: pointer;
+
+        &:hover {
+          background-color: $soft-red-hover;
+        }
       }
 
       p {
@@ -92,9 +97,6 @@ body {
       }
     }
   }
-
-
-
 
   .footer {
     display: flex;
@@ -131,6 +133,27 @@ body {
       .last-month {
         font-size: 1.4rem;
         color: $medium-brown;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    margin-top: 100px;
+    width: 400px;
+  }
+
+  .main-container {
+    width: 400px;
+
+    .graphics-container {
+
+      .monday-container, .tuesday-container, .wednesday-container, .thursday-container, .friday-container, .saturday-container, .sunday-container {
+
+        div {
+          width: 40px;
+        }
       }
     }
   }
