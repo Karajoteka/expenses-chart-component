@@ -2,6 +2,7 @@ $font-stack:'DM Sans', sans-serif;
 $soft-red: hsl(10, 79%, 65%);
 $soft-red-hover: hsl(10, 72%, 72%);
 $cyan: hsl(186, 34%, 60%);
+$cyan-hover: hsl(184, 46%, 68%);
 $dark-brown: hsl(25, 47%, 15%);
 $medium-brown: hsl(28, 10%, 53%);
 $cream: hsl(27, 66%, 92%);
@@ -74,23 +75,44 @@ body {
     height: 200px;
     border-bottom: 1px solid $medium-brown;
 
-    .monday-container, .tuesday-container, .wednesday-container, .thursday-container, .friday-container, .saturday-container, .sunday-container  {
+    .day-container {
       display: grid;
-      grid-template-rows: 160px 40px;
+      grid-template-rows: auto 40px;
+      
 
-      div {
+      .amount-display {
+        position: absolute;
+        width: 40px;
+        height: 25px;
+        padding: 5px;
+        font-size: 1rem;
+        font-weight: 700;
+        color: $cream;
+        background-color: $dark-brown;
+        border-radius: 3px;
+      }
+
+      .daily-graphic {
         height: 120px;
         width: 35px;
         background-color: $soft-red;
         margin-bottom: 10px;
+        margin-left: 2px;
         border-radius: 5px;
         cursor: pointer;
         transform: scaleY(-1);
         align-self: end;
-        // transform-origin: bottom;
 
         &:hover {
           background-color: $soft-red-hover;
+        }
+      }
+
+      .current-day {
+        background-color: $cyan;
+
+        &:hover {
+          background-color: $cyan-hover;
         }
       }
 
@@ -142,6 +164,12 @@ body {
   }
 }
 
+.inactive {
+  display: none;
+}
+
+
+
 @media screen and (min-width: 768px) {
   .header {
     margin-top: 100px;
@@ -153,10 +181,15 @@ body {
 
     .graphics-container {
 
-      .monday-container, .tuesday-container, .wednesday-container, .thursday-container, .friday-container, .saturday-container, .sunday-container {
+      .day-container {
 
-        div {
+        .amount-display {
+          width: 45px;
+        }
+
+        .daily-graphic {
           width: 40px;
+          margin-left: 3px;
         }
       }
     }
