@@ -79,11 +79,15 @@ body {
       grid-template-rows: 160px 40px;
 
       div {
+        height: 120px;
         width: 35px;
         background-color: $soft-red;
         margin-bottom: 10px;
         border-radius: 5px;
         cursor: pointer;
+        transform: scaleY(-1);
+        align-self: end;
+        // transform-origin: bottom;
 
         &:hover {
           background-color: $soft-red-hover;

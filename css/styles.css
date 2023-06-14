@@ -65,11 +65,14 @@ body {
   grid-template-rows: 160px 40px;
 }
 .main-container .graphics-container .monday-container div, .main-container .graphics-container .tuesday-container div, .main-container .graphics-container .wednesday-container div, .main-container .graphics-container .thursday-container div, .main-container .graphics-container .friday-container div, .main-container .graphics-container .saturday-container div, .main-container .graphics-container .sunday-container div {
+  height: 120px;
   width: 35px;
   background-color: hsl(10, 79%, 65%);
   margin-bottom: 10px;
   border-radius: 5px;
   cursor: pointer;
+  transform: scaleY(-1);
+  align-self: end;
 }
 .main-container .graphics-container .monday-container div:hover, .main-container .graphics-container .tuesday-container div:hover, .main-container .graphics-container .wednesday-container div:hover, .main-container .graphics-container .thursday-container div:hover, .main-container .graphics-container .friday-container div:hover, .main-container .graphics-container .saturday-container div:hover, .main-container .graphics-container .sunday-container div:hover {
   background-color: hsl(10, 72%, 72%);
